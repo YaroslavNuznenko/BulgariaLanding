@@ -23,21 +23,19 @@
             <div class="header__numberListWrapper">
                 <i class="fas fa-phone-square header__phoneIcon"></i>
                 <ul class="header__numbersList">
-                    <li>+38068 <span>308 32 23</span></li>
-                    <li>+38068 <span>308 32 23</span></li>
+                    <li>+38(097) <span>09 222 90</span></li>
+                    <li>+38(093) <span>402 21 01</span></li>
                 </ul>
             </div>
         </div>
-        <video autoplay loop class="header__videoBackground" height="600px" width="100%">
-            <source src="dist/video/Shore-Aerial-Sequence.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-        </video>
+        <div class="header__background" style="background-image: url('dist/img/header-background.jpg')"></div>
         <div class="header__bookingBlock bookingBlock">
             <h1 class="bookingBlock__mainHeader">Ранее бронирование 2018</h1>
             <p class="bookingBlock__description"><strong>экономьте до 50% </strong>на отдыхе весна, лето, осень 2018</p>
         </div>
         <form class="header__getOfferForm getOfferForm">
-            <input class='getOfferForm__field' type="text" placeholder="Ваше имя*" required>
-            <input class='getOfferForm__field' type="text" placeholder="+380*" required>
+            <input class='getOfferForm__field getOfferForm__name' type="text" placeholder="Ваше имя*" required="required" pattern="[а-яА-ЯёЁЇїІіЄєҐґ]{1,20}$">
+            <input class='getOfferForm__field getOfferForm__phone' type="text" placeholder="+380*" required="required" >
             <input class='getOfferForm__button button' type="submit" value="Получить предложение">
         </form>
     </div>
@@ -47,7 +45,7 @@
         <h1 class="resortSection__mainHeader">КК "АЛБЕНА"</h1>
         <p class="resortSection__description"><span class="bold">Албена</span> - один из самых современных курортных комплексов Болгарии. К курорту примыкает заповедник „Балтата” в нем сохранился уникальный, самый северный в мире субтропический лес с лианами. Албена предоставляет прекрасные возможности для семейного отдыха, для любителей спорта, для тех, кто помимо отдыха хочет поправить здоровье в прекрасном суперсовременном бальнео-центре Албены.
         </p>
-        <h2 class="resortSection__valueHeader">СТОИМОСТЬ ОТДЫХА: <br> <span>539&#8364;</span></h2>
+        <h2 class="resortSection__valueHeader">СТОИМОСТЬ ОТДЫХА: <br> <span>355&#8364;</span></h2>
     </div>
     <div class="resortSection__slider">
         <div class="slider">
@@ -58,20 +56,19 @@
     </div>
     <iframe class='resortSection__video' width="420" height="270" src="https://www.youtube.com/embed/AheQyKcVTrw" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 
-    <div class="resortSection__offerForm offerForm">
+    <form class="resortSection__offerForm offerForm">
         <h1 class="offerForm__mainHeader">ОСТАВИТЬ ЗАЯВКУ: </h1>
         <h2 class="offerForm__smallHeader">НА ИНДИВИДУАЛЬНЫЙ просчет</h2>
         <div class="offerForm__fieldsWrap">
-            <input type="text" class="offerForm__field" placeholder="Ваше имя*">
-            <input type="text" class="offerForm__field" placeholder="Город вылета">
-            <input type="text" class="offerForm__field" placeholder="Ваш телефон*">
-            <input type="text" class="offerForm__field" placeholder="Дата поездки">
-            <input type="email" class="offerForm__field" placeholder="Ваш e-mail*">
-            <input type="text" class="offerForm__field" placeholder="Кол-во человек:">
-            <input type="submit" class="offerForm__button button" value="Получить предложения">
+            <input type="text" class="offerForm__field offerForm__name" placeholder="Ваше имя*" required="required" pattern="[а-яА-ЯёЁЇїІіЄєҐґ]{1,20}$">
+            <input type="text" class="offerForm__field offerForm__city" placeholder="Город вылета" required="required" pattern="[а-яА-ЯёЁЇїІіЄєҐґ]{1,20}$">
+            <input type="text" class="offerForm__field offerForm__phone" placeholder="Ваш телефон*" title='Формат ввода (050) 121-34-57' required="required" pattern="\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}$">
+            <input type="text" class="offerForm__field offerForm__date" placeholder="Дата поездки" required="required" >
+            <input type="email" class="offerForm__field offerForm__email" placeholder="Ваш e-mail*" required="required" >
+            <input type="text" class="offerForm__field offerForm__manCount" placeholder="Кол-во человек:" required="required" >
+            <input type="submit" class="offerForm__button button " value="Получить предложения">
         </div>
-        </div>
-    </div>
+    </form>
 </section>
 <section class="divider"></section>
 
@@ -91,7 +88,7 @@
     </div>
     <iframe class='resortSection__video' width="420" height="270" src="https://www.youtube.com/embed/7vIsZIUbbr8" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 
-    <div class="resortSection__offerForm offerForm">
+    <form class="resortSection__offerForm offerForm">
         <h1 class="offerForm__mainHeader">ОСТАВИТЬ ЗАЯВКУ: </h1>
         <h2 class="offerForm__smallHeader">НА ИНДИВИДУАЛЬНЫЙ просчет</h2>
         <div class="offerForm__fieldsWrap">
@@ -103,8 +100,7 @@
             <input type="text" class="offerForm__field" placeholder="Кол-во человек:">
             <input type="submit" class="offerForm__button button" value="Получить предложения">
         </div>
-    </div>
-    </div>
+    </form>
 </section>
 <section class="divider"></section>
 
@@ -123,7 +119,7 @@
     </div>
     <iframe class='resortSection__video' width="420" height="270" src="https://www.youtube.com/embed/puTyEwNiX9g" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 
-    <div class="resortSection__offerForm offerForm">
+    <form class="resortSection__offerForm offerForm">
         <h1 class="offerForm__mainHeader">ОСТАВИТЬ ЗАЯВКУ: </h1>
         <h2 class="offerForm__smallHeader">НА ИНДИВИДУАЛЬНЫЙ просчет</h2>
         <div class="offerForm__fieldsWrap">
@@ -135,8 +131,7 @@
             <input type="text" class="offerForm__field" placeholder="Кол-во человек:">
             <input type="submit" class="offerForm__button button" value="Получить предложения">
         </div>
-    </div>
-    </div>
+    </form>
 </section>
 <section class="divider"></section>
 
@@ -146,7 +141,7 @@
         <p class="resortSection__description">Жемчужина Болгарии - <span class="bold">Несебр</span> - является шедевром древней архитектуры, включенным в список мирового культурного наследия под охраной ЮНЕСКО. Туры в Несебр больше всего подходят ценителям древностей.</p>
         <p class="resortSection__description">Находится  <span class="bold">Нессебр</span> в 37 км севернее города <span class="bold">Бургас</span>. Город делится на две части: <span class="bold">Новый Несебр</span>, в котором расположено большинство современных домов и отелей, и <span class="bold">Старый Несебр</span>. Подходит для спокойного отдыха.
             Стоимость  от 360 Евро</p>
-        <h2 class="resortSection__valueHeader">СТОИМОСТЬ ОТДЫХА: <br> <span>539&#8364;</span></h2>
+        <h2 class="resortSection__valueHeader">СТОИМОСТЬ ОТДЫХА: <br> <span>360&#8364;</span></h2>
     </div>
     <div class="resortSection__slider">
         <div class="slider">
@@ -157,7 +152,7 @@
     </div>
     <iframe class='resortSection__video' width="420" height="270" src="https://www.youtube.com/embed/bZAdfmbjMLw    " frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 
-    <div class="resortSection__offerForm offerForm">
+    <form class="resortSection__offerForm offerForm">
         <h1 class="offerForm__mainHeader">ОСТАВИТЬ ЗАЯВКУ: </h1>
         <h2 class="offerForm__smallHeader">НА ИНДИВИДУАЛЬНЫЙ просчет</h2>
         <div class="offerForm__fieldsWrap">
@@ -169,8 +164,8 @@
             <input type="text" class="offerForm__field" placeholder="Кол-во человек:">
             <input type="submit" class="offerForm__button button" value="Получить предложения">
         </div>
-    </div>
-    </div>
+    </form>
+
 </section>
 <section class="divider"></section>
 
@@ -180,7 +175,7 @@
         <p class="resortSection__description">На черноморском побережье <span class="bold">Болгарии расположился</span> маленький старинный городок под названием Созополь. Он находится на двух небольших полуостровах в получасе езды от города <span class="bold">   Бургаса</span> на побережье одноименного залива.</p>
         <p class="resortSection__description">Сам городок по-европейски традиционно делится на две части – <span class="bold">Старый и Новый город</span>, которые отделены друг от друга живописным парком. Старый город является архитектурно-историческим заповедником, привлекая туристов своим неповторимым самобытным стилем. Новый город с множеством небольших частных отелей, сотней ресторанчиков и россыпью магазинов позволяет сделать отдых туристов очень комфортным и по-домашнему уютным. К услугам отдыхающих два золотистых песчаных пляжа, стерильно чистых и бесплатных. </p>
         <p class="resortSection__description">Неудивительно, что отдыхать в <span class="bold">Созополе</span> предпочитают семейные пары со всей Европы, которым набили оскомину шумные тусовочные мега-курорты. Придется он по душе и людям с романтичным характером, любителям старины и ценителям хорошей болгарской кухни.</p>
-        <h2 class="resortSection__valueHeader">СТОИМОСТЬ ОТДЫХА: <br> <span>539&#8364;</span></h2>
+        <h2 class="resortSection__valueHeader">СТОИМОСТЬ ОТДЫХА: <br> <span>355&#8364;</span></h2>
     </div>
     <div class="resortSection__slider">
         <div class="slider">
@@ -190,8 +185,7 @@
         </div>
     </div>
     <iframe class='resortSection__video' width="420" height="270" src="https://www.youtube.com/embed/OE78IqXZcuo" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-
-    <div class="resortSection__offerForm offerForm">
+    <form class="resortSection__offerForm offerForm">
         <h1 class="offerForm__mainHeader">ОСТАВИТЬ ЗАЯВКУ: </h1>
         <h2 class="offerForm__smallHeader">НА ИНДИВИДУАЛЬНЫЙ просчет</h2>
         <div class="offerForm__fieldsWrap">
@@ -203,13 +197,38 @@
             <input type="text" class="offerForm__field" placeholder="Кол-во человек:">
             <input type="submit" class="offerForm__button button" value="Получить предложения">
         </div>
-    </div>
-    </div>
+    </form>
 </section>
 <section class="divider"></section>
 
 <footer class="footer">
-    <img src="dist/img/logo.png" alt="" class="footer__logo">
+    <div class="footer__logoWrap">
+        <img src="dist/img/logo.png" alt="" class="footer__logo">
+    </div>
+    <h1 class="footer__feedbackHeader">Наши контакты</h1>
+    <div class="footer__contactsRow">
+        <div class="footer__contactsCol contactsCol">
+            <h1 class="contactsCol__header">Адресс: </h1>
+            <ul class="contactsCol__list contactsList">
+                <li class="contactsList__item">г. Киев, ул. Старовокзальная, 23 офис 309 А</li>
+            </ul>
+        </div>
+        <div class="footer__contactsCol contactsCol contactsCol--networkItems">
+            <h1 class="contactsCol__header">Соц. сети</h1>
+            <ul class="contactsCol__list contactsList networkIconsList">
+                <li class="networkIconsList__item"><a href="#" class="fab fa-facebook-f networkIconsList__icon" aria-hidden="true"></a></li>
+                <li class="networkIconsList__item"><a href="#" class="fab fa-instagram networkIconsList__icon" aria-hidden="true"></a></li>
+                <li class="networkIconsList__item"><a href="#" class="fab fa-google-plus-g networkIconsList__icon" aria-hidden="true"></a></li>
+                <li class="networkIconsList__item"><a href="#" class="fab fa-youtube networkIconsList__icon" aria-hidden="true"></a></li>
+            </ul>
+        </div>
+        <div class="footer__contactsCol contactsCol contactsCol--moreInfo">
+            <h1 class="contactsCol__header">Больше информации: </h1>
+            <ul class="contactsCol__list contactsList ">
+                <li class="contactsList__item"><a href="http://sbmtour.com.ua/" target="_blank">sbmtour.com</a></li>
+            </ul>
+        </div>
+    </div>
 </footer>
 
 <script src="dist/js/jquery.min.js"></script>
