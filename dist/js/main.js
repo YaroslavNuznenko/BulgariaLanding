@@ -24,7 +24,15 @@ $(document).ready(function () {
         date= $(this).find('.offerForm__date').val();
         email= $(this).find('.offerForm__email').val();
         manCount= $(this).find('.offerForm__manCount').val();
-
+        if(date === ''){
+            date = 'не указан'
+        }
+        if(city === ''){
+            city = 'не указан'
+        }
+        if(manCount === ''){
+            manCount = 'не указан'
+        }
         $.post('send1.php',
             {
                 name: name,
